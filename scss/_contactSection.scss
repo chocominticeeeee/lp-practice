@@ -1,0 +1,10 @@
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    background-color: #F7F7F7;
+    & .contact__inner{
+        margin-top: 40px;
+    }
+}

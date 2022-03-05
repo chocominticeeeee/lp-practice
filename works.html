@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>LP練習2-news</title>
+    <link rel="icon" href="./images/favicon.ico" />
+  </head>
+  <body>
+    <!-- ヘッダー -->
+    <header class="header">
+      <!-- ハンバーガーメニュー -->
+      <div class="hamburgerMenu">
+        <div class="hamburgerMenu__nav">
+          <ul>
+            <li>
+              <a href="news.html">NEWS</a>
+            </li>
+            <li>
+              <a href="service.html">SERVICE</a>
+            </li>
+            <li>
+              <a href="works.html">WORKS</a>
+            </li>
+            <li><a href="company.html">COMPANY</a></li>
+            <li><a href="recruit.html">RECRUIT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="header__inner">
+        <span><a href="index.html">PON DESIGN</a></span>
+        <div class="header__nav">
+          <ul>
+            <li>
+              <a href="news.html">NEWS</a>
+            </li>
+            <li>
+              <a href="service.html">SERVICE</a>
+            </li>
+            <li>
+              <a href="works.html">WORKS</a>
+            </li>
+            <li><a href="company.html">COMPANY</a></li>
+            <li><a href="recruit.html">RECRUIT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <div class="header__nav-sp">
+          <div class="header__menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- メイン -->
+    <main class="main">
+      <!-- mvセクション -->
+      <section class="mv">
+        <div class="mv__inner">
+          <div class="mv__body">
+            <div class="mv__titlearea">
+              <h1 class="mv__title">WORKS</h1>
+              <p class="mv__sub-title">制作実績</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- パンくずセクション -->
+      <section class="breadcrumb">
+        <div class="breadcrumb__inner l-inner">
+          <div class="breadcrumb__body">
+            <ul>
+              <li>
+                <a href="index.html">TOP</a>
+              </li>
+              <li>
+                <i class="ai-chevron-right"></i>
+              </li>
+              <li>
+                WORKS
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- コンテンツセクション -->
+      <section class="works">
+        <div class="works__inner l-inner">
+          <div class="works__body">
+            <div class="cards">
+              <div class="works__card">
+                <a href="">
+                  <img src="images/works/smoothiesta@2x.png" alt="" />
+                  <p>Smoothiesta 様</p>
+                </a>
+              </div>
+              <div class="works__card">
+                <a href="">
+                  <img src="images/works/web-conference@2x.png" alt="" />
+                  <p>Web Conference 様</p>
+                </a>
+              </div>
+              <div class="works__card">
+                <a href="">
+                  <img src="images/works/lamina@2x.png" alt="" />
+                  <p>LAMINA 様</p>
+                </a>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="works__card">
+                <a href="">
+                  <img src="images/works/citylab@2x.png" alt="" />
+                  <p>CITYLab 様</p>
+                </a>
+              </div>
+              <div class="works__card">
+                <a href="">
+                  <img src="images/works/tabilog@2x.png" alt="" />
+                  <p>TABILOG 様</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- コンタクトセクション -->
+      <section class="contact">
+        <div class="contact__inner l-inner">
+          <div class="contact__body">
+            <div class="section__title">
+              <p class="section__title--en">CONTACT</p>
+              <p class="section__title--ja">お問い合わせ</p>
+            </div>
+            <div class="contact__text">
+              <span>Webサイトの制作のご依頼やお見積りなど、</span>
+              <span>お気軽にご相談ください。</span>
+            </div>
+            <button class="button">MORE</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- フッター -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <!-- フッターナビ -->
+        <div class="footer__nav">
+          <ul>
+            <li class="footer__nav--home">
+              <a href="index.html">HOME</a>
+            </li>
+            <li>
+              <a href="news.html">NEWS</a>
+            </li>
+            <li>
+              <a href="service.html">SERVICE</a>
+            </li>
+            <li>
+              <a href="works.html">WORKS</a>
+            </li>
+            <li><a href="company.html">COMPANY</a></li>
+            <li><a href="recruit.html">RECRUIT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <!-- コピーライト -->
+        <p class="copyright">© PONDESIGN</p>
+      </div>
+      <div class="footer__moveTopBtn" onclick="autoscrollTop()">
+        <i class="ai-arrow-up"></i>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/akar-icons-fonts"></script>
+    <script src="script/script.js"></script>
+  </body>
+</html>

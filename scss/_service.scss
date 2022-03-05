@@ -1,0 +1,52 @@
+.service__body{
+    width:100%;
+    margin-top: 70px;
+    margin-bottom: 110px;
+}
+
+// .service__boxes{
+//     display: flex;
+// }
+
+.service__box{
+    display: flex;
+    width: 100%;
+    margin-bottom: 60px;
+
+    @media screen and (max-width:900px) {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    & > img{
+        width: 35%;
+        margin-right: 50px;
+
+        @media screen and (max-width:900px) {
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+
+    & .service__textarea{
+        width: 50%;
+
+        @media screen and (max-width:900px) {
+            width: 100%;
+            text-align: center;
+        }
+
+        & > h2{
+            margin-bottom: 20px;
+            font-style: 24px;
+            font-weight: bold;
+            line-height: 1.8;
+        }
+
+        & > p{
+            line-height: 1.8;
+            font-size: 0.9375rem;
+        }
+    }
+}

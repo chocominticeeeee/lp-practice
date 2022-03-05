@@ -1,0 +1,367 @@
+.section {
+  // height: 980px;
+  width: 100%;
+}
+
+.sectionVisual {
+  height: 980px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./images/top/hero.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  & .section__inner {
+    & .sectionVisual__content {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      @media screen and (max-width: 900px) {
+        align-items: flex-start;
+        width: 300px;
+      }
+      & .sectionVisual__content--en {
+        padding-right: 100px;
+        font-size: 4rem;
+        font-weight: bold;
+        @media screen and (max-width: 1000px) {
+          padding-right: 0px;
+        }
+        @media screen and (max-width: 900px) {
+          font-size: 3rem;
+        }
+      }
+
+      & .sectionVisual__content--jp {
+        padding-right: 60px;
+        font-size: 1.5rem;
+        margin: 20px 0px;
+        @media screen and (max-width: 1000px) {
+          padding-right: 0px;
+        }
+        @media screen and (max-width: 900px) {
+          width: 150px;
+          font-size: 1rem;
+        }
+      }
+    }
+    & .visual__button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 200px;
+      height: 50px;
+      transition: all 0.3s;
+      border-radius: 100px;
+      border: 1px solid rgb(255, 255, 255);
+      background-color: transparent;
+      color: white;
+      &:hover {
+        background-color: white;
+        color: rgba(117, 51, 164, 1);
+        border: 1px solid rgba(117, 51, 164, 1);
+      }
+    }
+  }
+  & .scrolltext{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: -20px;
+    bottom: 80px;
+    transform: rotateZ(90deg);
+    & span{
+      &:nth-child(2){
+        display: inline-block;
+        width: 120px;
+        height: 1px;
+        margin-left: 5px;
+        animation: scrollanime 2s;
+        animation-iteration-count: infinite;
+        background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 33%, rgba(255,255,255,1) 33%, rgba(255,255,255,1) 66%, rgba(255,255,255,0) 66%);
+        background-size: 300% 200%;
+        background-position: 50% 50%;
+      }
+    }
+    @media screen and (max-width: 900px) {
+      right: -40px;
+    }
+  }
+}
+@keyframes scrollanime{
+  0%{
+    background-position: 100% 50%;
+  }
+  50%{
+    background-position: 50% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+}
+// newsセクション共通化済み
+
+.sectionService {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & .section__inner {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    max-width: 80%;
+    width: 100%;
+    & .section__title {
+      margin-bottom: 100px;
+      & .section__title--ja {
+        text-align: center;
+      }
+    }
+    & .section__contents {
+      display: flex;
+      justify-content: space-between;
+      & .section__content {
+        max-width: 340px;
+        & img {
+          width: 100%;
+        }
+        & .sectionService__p {
+          text-align: center;
+          font-size: 18px;
+          font-weight: bold;
+          margin: 15px 0px;
+        }
+        & .sectionService__p2 {
+          font-size: 15px;
+        }
+        &:nth-child(2) {
+          margin: 0px 50px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .sectionService {
+    & .section__inner {
+      & .section__title {
+        margin: 0;
+      }
+      & .section__contents {
+        flex-flow: column;
+        align-items: center;
+        & .section__content {
+          max-width: 500px;
+          margin: 50px 0px;
+          & img {
+            width: 100%;
+          }
+          & .sectionService__p {
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0px;
+          }
+          & .sectionService__p2 {
+            font-size: 15px;
+          }
+          &:nth-child(2) {
+            margin: 0;
+          }
+        }
+      }
+      & .button {
+        margin: 10px 0px;
+      }
+    }
+  }
+}
+
+.sectionWorks {
+  justify-content: center;
+  align-items: center;
+  & .section__inner {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 1) 31%,
+      rgba(240, 240, 240, 1) 31%
+    );
+    display: flex;
+    // justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0);
+    & .section__content {
+      margin: 0px 10px;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      width: 30%;
+      min-width: 350px;
+      background-color: #00000000;
+      & .section__contentp3 {
+        font-size: 15px;
+        margin: 20px 0px;
+      }
+      & .button {
+        margin: 20px 0px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .sectionWorks {
+    height: 100%;
+    display: flex;
+    align-items: initial;
+    & .section__inner {
+      padding-top: 100px;
+      flex-flow: column;
+      align-items: center;
+      background: none;
+      width: 100%;
+      & .mySwiper{
+        width: 100%;
+      }
+      & .section__content {
+        align-items: center;
+        width: 100%;
+        background-color: rgba(240, 240, 240, 1);
+        margin: 0;
+        padding-top: 50px;
+        & .section__contentp3 {
+          display: flex;
+          flex-flow: column;
+          justify-content: center;
+          & span {
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .sectionWorks {
+    & .section__inner{
+      padding: 0;
+    }
+  }
+}
+
+.TopCompany {
+  & .company__inner {
+    & .company__body {
+      display: flex;
+      flex-flow: column-reverse;
+      align-items: center;
+      & .company__message {
+        margin-bottom: 100px;
+        & .section__title {
+          margin-bottom: 50px;
+        }
+        & .company__emphasis {
+          display: inline-block;
+          & span {
+            white-space: nowrap;
+            // background: linear-gradient(transparent 80%, #f5f534 0%);
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .TopCompany {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.sectionRecruit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 550px;
+  & .section__inner {
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 350px;
+    & .section__content {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      width: 330px;
+      min-width: 250px;
+      background-color: #00000000;
+      margin: 0px auto;
+      & .section__contentp3 {
+        font-size: 15px;
+        margin: 20px 0px;
+      }
+      & .button {
+        margin: 20px 0px;
+      }
+    }
+    & .sectionRecruitImage {
+      width: 1100px;
+      height: 350px;
+      background-image: url("../images/top/you-x-ventures-X8H8vPcelPk-unsplash@2x.png");
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .sectionRecruit {
+    height: 550px;
+    width: 100%;
+    margin-bottom: 50px;
+    & .section__inner {
+      background-color: #f8f8f8;
+      display: flex;
+      flex-flow: column-reverse;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      & .section__title {
+        margin-top: 50px;
+      }
+      & .section__content {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        width: 330px;
+        min-width: 250px;
+        margin: 0px 50px;
+        & .section__contentp3 {
+          font-size: 15px;
+          margin: 20px 0px;
+        }
+        & .button {
+          margin: 20px 0px;
+        }
+      }
+      & .sectionRecruitImage {
+        width: 100%;
+        background-image: url("../images/top/you-x-ventures-X8H8vPcelPk-unsplash@2x.png");
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}

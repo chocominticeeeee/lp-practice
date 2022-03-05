@@ -1,0 +1,14 @@
+.contact__body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & .contact__text{
+        text-align: center;
+        padding-top: 28px;
+        font-style: 15px;
+        & span{
+            white-space: nowrap;
+        }
+    }
+}

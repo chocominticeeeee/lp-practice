@@ -1,0 +1,9 @@
+.shareBtns{
+    margin-bottom: 20px;
+    & .fb-like{
+        height: 30px;
+    }
+    & .twitter-share-button{
+        height: 20px;
+    }
+}

@@ -1,0 +1,15 @@
+.section__title {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  & .section__title--en {
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--color1);
+  }
+  & .section__title--ja {
+    text-align: center;
+    font-size: 13px;
+    color: var(--color1);
+  }
+}

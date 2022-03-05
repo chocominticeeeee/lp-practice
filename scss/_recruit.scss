@@ -1,0 +1,233 @@
+.recruitP {
+  min-height: 100vh;
+  background-image: url("../images/recruit/リピートグリッド\ 8@2x.png");
+  & .recruit__inner {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 100%;
+    & .recruit--title {
+      color: #391e88;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+    & .recruit__visual {
+      width: 100%;
+      & .section__title {
+        & .section__title--en {
+          text-align: center;
+          & span {
+            font-size: 72px;
+            white-space: nowrap;
+          }
+          margin-bottom: 20px;
+        }
+        & .section__title--ja {
+          font-size: 32px;
+          margin-bottom: 20px;
+        }
+      }
+      & p {
+        text-align: center;
+      }
+      & img {
+        width: 100%;
+      }
+    }
+    & .recruit__info {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+
+      & .infoArea {
+        width: 75%;
+        border-radius: 10px;
+        border: 1px solid #b8aed5;
+        margin: 0px 50px;
+
+        & .infoArea__inner {
+          display: flex;
+          flex-flow: column;
+          align-items: center;
+          justify-content: center;
+          margin: 50px 80px;
+          & .infoArea--title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px 0;
+          }
+          & .info__contents {
+            width: 100%;
+            & .content {
+              display: flex;
+              flex-flow: row;
+              border-bottom: 1px solid #dddddd;
+              font-size: 15px;
+              & span {
+                display: flex;
+                justify-content: flex-start;
+                &:nth-child(1) {
+                  width: 150px;
+                  margin: 30px 0px;
+                  padding-left: 25px;
+                }
+                &:nth-child(2) {
+                  max-width: 1000px;
+                  width: 100%;
+                  margin: 30px 0px;
+                }
+              }
+            }
+          }
+          & .button {
+            margin: 0;
+            margin-top: 50px;
+          }
+        }
+      }
+    }
+    & .recruit__movie {
+      display: flex;
+      justify-content: center;
+      margin: 50px 0px;
+      width: 100%;
+      & .recruit__movie__inner {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 75%;
+        margin: 0px 50px;
+        & iframe {
+          width: 100%;
+          height: 100%;
+          aspect-ratio: 16/9;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .recruitP {
+    min-height: 100vh;
+    background-image: url("../images/recruit/リピートグリッド\ 8@2x.png");
+    & .recruit__inner {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      width: 100%;
+      & .recruit--title {
+        color: #391e88;
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+      & .recruit__visual {
+        width: 100%;
+        & .section__title {
+          & .section__title--en {
+            text-align: center;
+            & span {
+              font-size: 48px;
+              white-space: nowrap;
+            }
+            margin-bottom: 20px;
+          }
+          & .section__title--ja {
+            font-size: 18px;
+            margin-bottom: 20px;
+          }
+        }
+        & p {
+          text-align: center;
+          font-size: 15px;
+        }
+        & img {
+          margin: 20px 0px;
+          width: 100%;
+        }
+      }
+      & .recruit__info {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+
+        & .infoArea {
+          width: 75%;
+          border-radius: 10px;
+          border: 1px solid #b8aed5;
+          margin: 0px 50px;
+
+          & .infoArea__inner {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0px 10px;
+            & .infoArea--title {
+              text-align: center;
+              font-size: 16px;
+              font-weight: bold;
+              margin-bottom: 20px 0;
+              margin-top: 35px;
+              color: #391e88;
+            }
+            & .info__contents {
+              width: 100%;
+              & .content {
+                display: flex;
+                flex-flow: column;
+                border-bottom: 1px solid #dddddd;
+                font-size: 15px;
+                & span {
+                  display: flex;
+                  justify-content: flex-start;
+                  margin: 0;
+                  margin: 10px 0;
+                  &:nth-child(1) {
+                    margin: 0;
+                    margin-top: 20px;
+                    margin-bottom: 5px;
+                  }
+                  &:nth-child(2) {
+                    margin: 0;
+                    margin-bottom: 20px;
+                    width: 100%;
+                    padding:0px 25px;
+                  }
+                }
+              }
+            }
+            & .button {
+              margin: 0;
+              margin-top: 50px;
+              margin-bottom: 50px;
+            }
+          }
+        }
+      }
+      & .recruit__movie {
+        display: flex;
+        justify-content: center;
+        margin: 50px 0px;
+        width: 100%;
+        & .recruit__movie__inner {
+          display: flex;
+          flex-flow: column;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          width: 75%;
+          margin: 0px 50px;
+          & iframe {
+            width: 100%;
+            height: 100%;
+            aspect-ratio: 16/9;
+          }
+        }
+      }
+    }
+  }
+}

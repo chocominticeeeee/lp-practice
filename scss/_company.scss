@@ -1,0 +1,138 @@
+.company__body{
+    background-image: url("images/top/bg-face.png");
+    background-repeat: no-repeat;
+    background-position: center -5px;
+    position:relative;
+    height: 500px;
+    width: 100%;
+    margin-top: 35px;
+    padding:5px 0;
+
+    @media screen and (max-width:900px) {
+        background-image: url("");
+    }
+
+    & .company__message{
+        position: absolute;
+        width: 100%;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+
+        
+
+        & .company__emphasis{
+            font-size: 40px;
+            padding-top: 30px;
+            font-weight: 300;
+            line-height: calc(32 / 40);
+            background: linear-gradient(transparent 80%, #f5f534 0%);
+        }
+
+        & > p{
+            font-style: 15px;
+            display: block;
+            margin-top: 32px;
+            
+        }
+    }
+}
+
+.company__inner{
+    width:90%;
+    min-width: 100%;
+    margin:0 auto;
+    padding: 0 5px;
+}
+
+.about__body{
+    margin-top: 57px;
+    & .about__ceoarea{
+        display: flex;
+
+        @media screen and (max-width:900px) {
+            flex-direction: column;
+        }
+
+        & .about__ceo{
+            margin-right: 50px;
+            height:330px;
+            flex: 0 0 40.09009%;
+
+            @media screen and (max-width:900px) {
+                margin-right:0;
+                margin-bottom: 30px;
+            }
+        }
+
+        & > p{
+            flex: 1;
+            padding: 5px;
+            font-weight: 300;
+            line-height: 1.8;
+            color: #333;
+            font-size: 15px;
+            font-size: 0.9375rem;
+        }
+    }
+
+    & .about__info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 133px;
+        width: 100%;
+        @media screen and (max-width:900px) {
+            margin-top: 75px;
+        }
+
+        & .about__table{
+            width: 100%;
+            margin:0 auto;
+            background-color: white;
+            margin-top: 20px;
+
+            & tr{
+                
+                text-align: left;
+                height:100%;
+                & th{
+                    width: 20%;
+                    vertical-align: middle;
+                    font-style: normal;
+                    font-weight: normal;
+                    padding: 10px;
+                    font-size: 12px;
+                    height: 80px;
+                    border-bottom:1px solid #DDDDDD ;
+                }
+                & td{
+                    width: 80%;
+                    padding: 10px;
+                    font-size: 12px;
+                    border-bottom:1px solid #DDDDDD ;
+                }
+            }
+        }
+
+        & iframe{
+            width: 100%;
+            margin-top: 89px;
+            margin-bottom: 137px;
+            @media screen and (max-width:900px) {
+                margin-bottom: 0px;
+            }
+
+        }
+    }
+}
+
+.company__title{
+    color:var(--color1);
+    font-size: 32px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 30px;
+    
+}

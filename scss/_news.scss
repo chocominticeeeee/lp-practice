@@ -1,0 +1,7 @@
+.news{
+    & .section__inner{
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
